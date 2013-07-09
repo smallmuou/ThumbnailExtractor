@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ThumbnailExtractor' target in the 'ThumbnailExtractor' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

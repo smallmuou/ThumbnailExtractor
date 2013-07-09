@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BBB9BF91771B6D80054E593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9BF81771B6D80054E593 /* Foundation.framework */; };
+		6BBB9BFE1771B6D80054E593 /* ThumbnailExtractor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BBB9BFD1771B6D80054E593 /* ThumbnailExtractor.h */; };
+		6BBB9C001771B6D80054E593 /* ThumbnailExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB9BFF1771B6D80054E593 /* ThumbnailExtractor.m */; };
+		6BBB9C081771B6D80054E593 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9C071771B6D80054E593 /* SenTestingKit.framework */; };
+		6BBB9C0A1771B6D80054E593 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9C091771B6D80054E593 /* UIKit.framework */; };
+		6BBB9C0B1771B6D80054E593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9BF81771B6D80054E593 /* Foundation.framework */; };
+		6BBB9C0E1771B6D80054E593 /* libThumbnailExtractor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9BF51771B6D80054E593 /* libThumbnailExtractor.a */; };
+		6BBB9C141771B6D80054E593 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BBB9C121771B6D80054E593 /* InfoPlist.strings */; };
+		6BBB9C171771B6D80054E593 /* ThumbnailExtractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB9C161771B6D80054E593 /* ThumbnailExtractorTests.m */; };
+		6BBB9C301771B6FD0054E593 /* libexif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9C2F1771B6FD0054E593 /* libexif.a */; };
+		6BBB9C311771B6FD0054E593 /* libexif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBB9C2F1771B6FD0054E593 /* libexif.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BBB9C0C1771B6D80054E593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BBB9BED1771B6D80054E593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BBB9BF41771B6D80054E593;
+			remoteInfo = ThumbnailExtractor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6BBB9BF31771B6D80054E593 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				6BBB9BFE1771B6D80054E593 /* ThumbnailExtractor.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6BBB9BF51771B6D80054E593 /* libThumbnailExtractor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThumbnailExtractor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBB9BF81771B6D80054E593 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6BBB9BFC1771B6D80054E593 /* ThumbnailExtractor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThumbnailExtractor-Prefix.pch"; sourceTree = "<group>"; };
+		6BBB9BFD1771B6D80054E593 /* ThumbnailExtractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailExtractor.h; sourceTree = "<group>"; };
+		6BBB9BFF1771B6D80054E593 /* ThumbnailExtractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailExtractor.m; sourceTree = "<group>"; };
+		6BBB9C061771B6D80054E593 /* ThumbnailExtractorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThumbnailExtractorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBB9C071771B6D80054E593 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6BBB9C091771B6D80054E593 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6BBB9C111771B6D80054E593 /* ThumbnailExtractorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThumbnailExtractorTests-Info.plist"; sourceTree = "<group>"; };
+		6BBB9C131771B6D80054E593 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6BBB9C151771B6D80054E593 /* ThumbnailExtractorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailExtractorTests.h; sourceTree = "<group>"; };
+		6BBB9C161771B6D80054E593 /* ThumbnailExtractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailExtractorTests.m; sourceTree = "<group>"; };
+		6BBB9C211771B6FD0054E593 /* _stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _stdint.h; sourceTree = "<group>"; };
+		6BBB9C221771B6FD0054E593 /* exif-byte-order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-byte-order.h"; sourceTree = "<group>"; };
+		6BBB9C231771B6FD0054E593 /* exif-content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-content.h"; sourceTree = "<group>"; };
+		6BBB9C241771B6FD0054E593 /* exif-data-type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-data-type.h"; sourceTree = "<group>"; };
+		6BBB9C251771B6FD0054E593 /* exif-data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-data.h"; sourceTree = "<group>"; };
+		6BBB9C261771B6FD0054E593 /* exif-entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-entry.h"; sourceTree = "<group>"; };
+		6BBB9C271771B6FD0054E593 /* exif-format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-format.h"; sourceTree = "<group>"; };
+		6BBB9C281771B6FD0054E593 /* exif-ifd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-ifd.h"; sourceTree = "<group>"; };
+		6BBB9C291771B6FD0054E593 /* exif-loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-loader.h"; sourceTree = "<group>"; };
+		6BBB9C2A1771B6FD0054E593 /* exif-log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-log.h"; sourceTree = "<group>"; };
+		6BBB9C2B1771B6FD0054E593 /* exif-mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-mem.h"; sourceTree = "<group>"; };
+		6BBB9C2C1771B6FD0054E593 /* exif-mnote-data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-mnote-data.h"; sourceTree = "<group>"; };
+		6BBB9C2D1771B6FD0054E593 /* exif-tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-tag.h"; sourceTree = "<group>"; };
+		6BBB9C2E1771B6FD0054E593 /* exif-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "exif-utils.h"; sourceTree = "<group>"; };
+		6BBB9C2F1771B6FD0054E593 /* libexif.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexif.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BBB9BF21771B6D80054E593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBB9BF91771B6D80054E593 /* Foundation.framework in Frameworks */,
+				6BBB9C301771B6FD0054E593 /* libexif.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBB9C021771B6D80054E593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBB9C081771B6D80054E593 /* SenTestingKit.framework in Frameworks */,
+				6BBB9C0A1771B6D80054E593 /* UIKit.framework in Frameworks */,
+				6BBB9C0B1771B6D80054E593 /* Foundation.framework in Frameworks */,
+				6BBB9C0E1771B6D80054E593 /* libThumbnailExtractor.a in Frameworks */,
+				6BBB9C311771B6FD0054E593 /* libexif.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BBB9BEC1771B6D80054E593 = {
+			isa = PBXGroup;
+			children = (
+				6BBB9BFA1771B6D80054E593 /* ThumbnailExtractor */,
+				6BBB9C0F1771B6D80054E593 /* ThumbnailExtractorTests */,
+				6BBB9BF71771B6D80054E593 /* Frameworks */,
+				6BBB9BF61771B6D80054E593 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BBB9BF61771B6D80054E593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9BF51771B6D80054E593 /* libThumbnailExtractor.a */,
+				6BBB9C061771B6D80054E593 /* ThumbnailExtractorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BBB9BF71771B6D80054E593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9BF81771B6D80054E593 /* Foundation.framework */,
+				6BBB9C071771B6D80054E593 /* SenTestingKit.framework */,
+				6BBB9C091771B6D80054E593 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BBB9BFA1771B6D80054E593 /* ThumbnailExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9BFD1771B6D80054E593 /* ThumbnailExtractor.h */,
+				6BBB9BFF1771B6D80054E593 /* ThumbnailExtractor.m */,
+				6BBB9BFB1771B6D80054E593 /* Supporting Files */,
+			);
+			path = ThumbnailExtractor;
+			sourceTree = "<group>";
+		};
+		6BBB9BFB1771B6D80054E593 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9C201771B6FD0054E593 /* libexif */,
+				6BBB9C2F1771B6FD0054E593 /* libexif.a */,
+				6BBB9BFC1771B6D80054E593 /* ThumbnailExtractor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BBB9C0F1771B6D80054E593 /* ThumbnailExtractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9C151771B6D80054E593 /* ThumbnailExtractorTests.h */,
+				6BBB9C161771B6D80054E593 /* ThumbnailExtractorTests.m */,
+				6BBB9C101771B6D80054E593 /* Supporting Files */,
+			);
+			path = ThumbnailExtractorTests;
+			sourceTree = "<group>";
+		};
+		6BBB9C101771B6D80054E593 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9C111771B6D80054E593 /* ThumbnailExtractorTests-Info.plist */,
+				6BBB9C121771B6D80054E593 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BBB9C201771B6FD0054E593 /* libexif */ = {
+			isa = PBXGroup;
+			children = (
+				6BBB9C211771B6FD0054E593 /* _stdint.h */,
+				6BBB9C221771B6FD0054E593 /* exif-byte-order.h */,
+				6BBB9C231771B6FD0054E593 /* exif-content.h */,
+				6BBB9C241771B6FD0054E593 /* exif-data-type.h */,
+				6BBB9C251771B6FD0054E593 /* exif-data.h */,
+				6BBB9C261771B6FD0054E593 /* exif-entry.h */,
+				6BBB9C271771B6FD0054E593 /* exif-format.h */,
+				6BBB9C281771B6FD0054E593 /* exif-ifd.h */,
+				6BBB9C291771B6FD0054E593 /* exif-loader.h */,
+				6BBB9C2A1771B6FD0054E593 /* exif-log.h */,
+				6BBB9C2B1771B6FD0054E593 /* exif-mem.h */,
+				6BBB9C2C1771B6FD0054E593 /* exif-mnote-data.h */,
+				6BBB9C2D1771B6FD0054E593 /* exif-tag.h */,
+				6BBB9C2E1771B6FD0054E593 /* exif-utils.h */,
+			);
+			path = libexif;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BBB9BF41771B6D80054E593 /* ThumbnailExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BBB9C1A1771B6D80054E593 /* Build configuration list for PBXNativeTarget "ThumbnailExtractor" */;
+			buildPhases = (
+				6BBB9BF11771B6D80054E593 /* Sources */,
+				6BBB9BF21771B6D80054E593 /* Frameworks */,
+				6BBB9BF31771B6D80054E593 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThumbnailExtractor;
+			productName = ThumbnailExtractor;
+			productReference = 6BBB9BF51771B6D80054E593 /* libThumbnailExtractor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6BBB9C051771B6D80054E593 /* ThumbnailExtractorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BBB9C1D1771B6D80054E593 /* Build configuration list for PBXNativeTarget "ThumbnailExtractorTests" */;
+			buildPhases = (
+				6BBB9C011771B6D80054E593 /* Sources */,
+				6BBB9C021771B6D80054E593 /* Frameworks */,
+				6BBB9C031771B6D80054E593 /* Resources */,
+				6BBB9C041771B6D80054E593 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BBB9C0D1771B6D80054E593 /* PBXTargetDependency */,
+			);
+			name = ThumbnailExtractorTests;
+			productName = ThumbnailExtractorTests;
+			productReference = 6BBB9C061771B6D80054E593 /* ThumbnailExtractorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BBB9BED1771B6D80054E593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = xuwf;
+			};
+			buildConfigurationList = 6BBB9BF01771B6D80054E593 /* Build configuration list for PBXProject "ThumbnailExtractor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BBB9BEC1771B6D80054E593;
+			productRefGroup = 6BBB9BF61771B6D80054E593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BBB9BF41771B6D80054E593 /* ThumbnailExtractor */,
+				6BBB9C051771B6D80054E593 /* ThumbnailExtractorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BBB9C031771B6D80054E593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBB9C141771B6D80054E593 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BBB9C041771B6D80054E593 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BBB9BF11771B6D80054E593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBB9C001771B6D80054E593 /* ThumbnailExtractor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBB9C011771B6D80054E593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBB9C171771B6D80054E593 /* ThumbnailExtractorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BBB9C0D1771B6D80054E593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BBB9BF41771B6D80054E593 /* ThumbnailExtractor */;
+			targetProxy = 6BBB9C0C1771B6D80054E593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BBB9C121771B6D80054E593 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BBB9C131771B6D80054E593 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BBB9C181771B6D80054E593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6BBB9C191771B6D80054E593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BBB9C1B1771B6D80054E593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ThumbnailExtractor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThumbnailExtractor/ThumbnailExtractor-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ThumbnailExtractor";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ThumbnailExtractor\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6BBB9C1C1771B6D80054E593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ThumbnailExtractor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThumbnailExtractor/ThumbnailExtractor-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ThumbnailExtractor";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ThumbnailExtractor\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6BBB9C1E1771B6D80054E593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThumbnailExtractor/ThumbnailExtractor-Prefix.pch";
+				INFOPLIST_FILE = "ThumbnailExtractorTests/ThumbnailExtractorTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ThumbnailExtractor\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6BBB9C1F1771B6D80054E593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThumbnailExtractor/ThumbnailExtractor-Prefix.pch";
+				INFOPLIST_FILE = "ThumbnailExtractorTests/ThumbnailExtractorTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ThumbnailExtractor\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BBB9BF01771B6D80054E593 /* Build configuration list for PBXProject "ThumbnailExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBB9C181771B6D80054E593 /* Debug */,
+				6BBB9C191771B6D80054E593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BBB9C1A1771B6D80054E593 /* Build configuration list for PBXNativeTarget "ThumbnailExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBB9C1B1771B6D80054E593 /* Debug */,
+				6BBB9C1C1771B6D80054E593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BBB9C1D1771B6D80054E593 /* Build configuration list for PBXNativeTarget "ThumbnailExtractorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBB9C1E1771B6D80054E593 /* Debug */,
+				6BBB9C1F1771B6D80054E593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BBB9BED1771B6D80054E593 /* Project object */;
+}
